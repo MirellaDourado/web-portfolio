@@ -1,0 +1,100 @@
+body{
+    background: radial-gradient(circle at bottom, #353c4e, black 100%);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+}
+/*Nav Bar*/
+#navbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #525e65;;
+    box-shadow: 0 7px 20px 0 rgba(0,0,0,0.2),0 4px 10px 0 rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: fixed;
+}
+
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-item{
+    font-size: 14px;
+    width: 100px;
+    margin: 0px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+/*Section*/
+h1{
+    letter-spacing: 0.125em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+h2{
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+section{
+    margin-left: 20px;
+    margin: 20px;
+}
+/*about-me part*/
+#about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about-me-photo{
+    margin-bottom: 50px;
+}
+#about-me-text{
+    margin: 20px 400px;
+}
+#pre{
+    margin-bottom: 45px;
+    margin: 0;
+}
+p{
+    text-align: justify;
+    font-weight: bolder;
+}
+/*Footer*/
+footer li{
+    list-style: none ;
+    margin: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;  
+}
+footer ul{
+    display: flex;
+    list-style-type: none;
+}
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
