@@ -1,0 +1,63 @@
+body{
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 0;
+  background: #d2d5d68e;
+  font-family: 'Mulish', sans-serif;
+}
+#hello{
+  text-decoration: none;
+  font-size: 40px;
+  text-align: left;
+  line-height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#hello h1{
+  font-weight: 700;
+}
+/*NAV BAR*/
+#nav-bar a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+#nav-bar a:hover{
+  color: gray;
+}
+#nav-bar li{
+  display: inline;
+  padding: 30px;
+}
+#nav-bar{
+  display: flex;
+  justify-content: flex-end;
+}
+/*PROJECTS*/
+#projects h2{
+  padding: 220px;
+  text-align: center;
+  font-size: 50px;
+}
+#projects img{
+  width: 200px;
+}
+/*CONTACT*/
+footer{
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+#contact li{
+  list-style: none;
+  display: inline-flex;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+#contact{
+  display: flex;
+  justify-content: flex-end;
+}
+#contact img{
+  width: 20px;
+}
