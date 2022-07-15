@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 70px;
+    background-color: #b1b1b131;
+    font-family: 'Crimson Pro', serif;
+}
+/*NAV BAR*/
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+  #nav-bar a:hover{
+    color: gray;
+  }
+  #nav-bar li{
+    display: inline;
+    padding: 30px;
+
+  }
+  #nav-bar{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Mulish', sans-serif;
+  }
+/*APRESENTATION*/
+#h1{
+    width: 600px;
+}
+#h1 h1{
+    color: rgb(63, 63, 63);
+    font-size: 35px;
+    line-height: 45px;
+}
+#h1 p{
+    font-size: 20px;
+    color: #2b2b2be1;
+    text-align: justify;
+    line-height: 30px;
+}
+#text{
+    padding-top: 100px;
+    display:flex;
+    justify-content: space-around;
+}
+#curiosidade-del{
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+}
+
