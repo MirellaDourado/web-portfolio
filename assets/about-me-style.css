@@ -1,6 +1,8 @@
 body{
-    margin: 0;
-    padding: 70px;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 0px;
     background-color: #b1b1b131;
     font-family: 'Crimson Pro', serif;
 }
@@ -40,6 +42,7 @@ body{
 }
 #text{
     padding-top: 100px;
+    padding-bottom: 100px;
     display:flex;
     justify-content: space-around;
 }
@@ -47,4 +50,33 @@ body{
     text-decoration-line: line-through;
     text-transform: uppercase;
 }
+/*CONTACT*/
+footer{
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  #end{
+    display: flex;
+    justify-content: space-between;
+  }
+  #contact li{
+    list-style: none;
+    display: inline-flex;
+    padding: 30px;
+    padding-bottom: 0px;
+  }
+  #contact{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #contact img{
+    width: 20px;
+  }
+  #end h2{
+    font-size: 20px;
+  }
+  #end h2 a{
+    color: #C2847A;
+    text-decoration: none;
+  }
 

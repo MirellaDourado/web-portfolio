@@ -48,6 +48,10 @@ footer{
   padding-top: 40px;
   padding-bottom: 0px;
 }
+#end{
+  display: flex;
+  justify-content: space-between;
+}
 #contact li{
   list-style: none;
   display: inline-flex;
@@ -60,4 +64,11 @@ footer{
 }
 #contact img{
   width: 20px;
+}
+#end h2{
+  font-size: 20px;
+}
+#end h2 a{
+  color: #C2847A;
+  text-decoration: none;
 }
