@@ -1,14 +1,12 @@
 body{
-  margin-top: 50px;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin: 0;
   padding: 0;
   background: #d2d5d68e;
   font-family: 'Mulish', sans-serif;
 }
 #hello{
   text-decoration: none;
-  font-size: 40px;
+  font-size: 29px;
   text-align: left;
   line-height: 90px;
   padding-top: 20px;
@@ -45,8 +43,7 @@ body{
 }
 /*CONTACT*/
 footer{
-  padding-top: 40px;
-  padding-bottom: 0px;
+  padding: 20px;
 }
 #end{
   display: flex;
@@ -71,4 +68,14 @@ footer{
 #end h2 a{
   color: #C2847A;
   text-decoration: none;
+}
+/*ADJUST*/
+img{
+  width: 100%;
+}
+main{
+  max-width: 800px;
+  min-width: 320px;
+  margin: auto;
+  padding: 40px;
 }
