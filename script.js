@@ -4,6 +4,7 @@ const leftEar = document.querySelector('.ear-left')
 const rightEar = document.querySelector('.ear-right')
 const navBar = document.querySelector('.nav-bar')
 const catFace = document.querySelector('.face')
+const pageFooter = document.querySelector('.social-media')
 
 document.body.style.backgroundColor = '#FEFAF6'
 function changeMode() {
@@ -13,6 +14,7 @@ function changeMode() {
   leftEar.classList.toggle('darkMode')
   rightEar.classList.toggle('darkMode')
   catFace.classList.toggle('darkMode')
+  pageFooter.classList.toggle('darkMode')
   if ( document.body.style.backgroundColor === 'rgb(254, 250, 246)'){
     document.body.style.backgroundColor = '#161616'
     document.body.style.color = 'white'
