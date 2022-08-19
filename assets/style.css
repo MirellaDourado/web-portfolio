@@ -12,7 +12,7 @@ body{
 }
 
 /*NAV BAR*/
-#nav-bar{
+.nav-bar{
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -56,6 +56,7 @@ body{
   background-color: #161616;
   height: 300px;
   border-radius: 20px;
+  color: #FEFAF6;
 }
 
 .extra p {
@@ -257,4 +258,12 @@ main{
   max-width: 800px;
   margin: auto;
   padding: 40px;
+}
+
+.lightMode {
+  background-color: #DABFFF;
+}
+.darkMode {
+  background-color: #161616;
+  color: #FEFAF6;
 }
