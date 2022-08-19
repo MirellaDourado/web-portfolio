@@ -267,3 +267,23 @@ main{
   background-color: #161616;
   color: #FEFAF6;
 }
+
+@media screen and (min-width: 1024px) { 
+  .nav-bar{
+    font-size: 20px;
+  }
+
+  #hello {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .extra {
+    width: 50%;
+    cursor: pointer;
+  }
+
+  #apresentation {
+    width: 40%;
+  }
+}
