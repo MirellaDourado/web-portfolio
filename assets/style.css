@@ -22,7 +22,6 @@ body{
   margin: 0;
   height: 70px;
   align-items: center;
-  border: 2px red solid;
 }
  /* FIRST SECTION */
 
@@ -30,6 +29,10 @@ body{
   padding-top: 80px;
   margin: auto;
   max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #apresentation h1{
@@ -228,32 +231,26 @@ body{
   width: 160px;
 }
 /*CONTACT*/
-#end{
+#social-media{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
-#contact li{
-  list-style: none;
-  display: inline-flex;
-  padding: 30px;
-  padding-bottom: 0px;
-}
-#contact{
+
+footer {
   display: flex;
-  justify-content: flex-end;
+  padding: 15px;
 }
-#contact img{
-  width: 20px;
+
+#social-media {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
-#end h2{
-  font-size: 20px;
+
+#social-media i {
+  font-size: 21px;
+  color: #A393BF;
 }
-#end h2 a{
-  color: #C2847A;
-  text-decoration: none;
-}
+
 /*ADJUST*/
 main{
   max-width: 800px;
