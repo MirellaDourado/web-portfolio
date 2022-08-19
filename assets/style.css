@@ -71,10 +71,11 @@ body{
 
 .ear {
   position: absolute;
-  top: -30px;
+  top: -60px;
   height: 60%;
   width: 25%;
   background-color: white;
+
 }
 
 .ear:before {
@@ -88,7 +89,7 @@ body{
 }
 
 .ear-left {
-  left: -7%;
+  left: -2%;
   border-radius: 70% 30% 0% 0%/100% 100% 0% 0%;
   transform: rotate(-15deg);
 }
@@ -98,7 +99,7 @@ body{
 }
 
 .ear-right {
-  right: -7%;
+  right: -2%;
   border-radius: 30% 70% 0% 0%/100% 100% 0% 0%;
   transform: rotate(15deg);
 }
@@ -113,15 +114,17 @@ body{
   width: 100%;
   border-color: white;
   border-radius: 50%;
+  background-color: #FEFAF6;
 }
 
 .eye {
   position: absolute;
-  top: 53%;
+  top: 35%;
   height: 30%;
   width: 31%;
   background-color: white;
   border-radius: 50% 50% 50% 50%/ 60% 60% 40% 40%;
+  box-shadow: 0 0 5px #161616;
 }
 
 .eye::after {
@@ -215,7 +218,7 @@ body{
 
 .little-muzzle {
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 50%;
   height: 6%;
   width: 10%;
@@ -261,7 +264,8 @@ main{
 }
 
 .lightMode {
-  background-color: #DABFFF;
+  background-color: #FEFAF6;
+  color: #161616;
 }
 .darkMode {
   background-color: #161616;

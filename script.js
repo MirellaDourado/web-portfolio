@@ -3,6 +3,7 @@ const catText = document.querySelector('.cat-p')
 const leftEar = document.querySelector('.ear-left')
 const rightEar = document.querySelector('.ear-right')
 const navBar = document.querySelector('.nav-bar')
+const catFace = document.querySelector('.face')
 
 document.body.style.backgroundColor = '#FEFAF6'
 function changeMode() {
@@ -11,6 +12,7 @@ function changeMode() {
   cat.classList.toggle('lightMode')
   leftEar.classList.toggle('darkMode')
   rightEar.classList.toggle('darkMode')
+  catFace.classList.toggle('darkMode')
   if ( document.body.style.backgroundColor === 'rgb(254, 250, 246)'){
     document.body.style.backgroundColor = '#161616'
     document.body.style.color = 'white'
