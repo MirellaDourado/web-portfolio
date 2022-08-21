@@ -340,14 +340,6 @@ main{
     display: none;
   }
 
-  .nav-bar ul:nth-of-type(2) {
-    display: none;
-  }
-  
-  .nav-bar a {
-    color: inherit;
-  }
-
   #hello {
     flex-direction: row;
     justify-content: space-between;
@@ -368,12 +360,16 @@ main{
   display: flex;
 }
 
+hr {
+  display: block;
+}
+
 footer {
   display: flex;
   padding: 15px;
 }
 
-.social-media {
+footer .social-media {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
