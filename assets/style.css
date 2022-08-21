@@ -354,7 +354,6 @@ main{
   #apresentation {
     width: 40%;
   }
-}
 
 .social-media{
   display: flex;
@@ -375,4 +374,6 @@ footer .social-media {
   justify-content: space-evenly;
   font-size: 21px;
   color: rgb(22, 22, 22);
+}
+
 }
