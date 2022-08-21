@@ -12,6 +12,7 @@ body{
 }
 
 a {
+  color: inherit;
   text-decoration: none;
   cursor: pointer;
   opacity: 0.9;
@@ -26,11 +27,15 @@ a:visited, a:hover {
   color: inherit;
 }
 
+li {
+  list-style-type: none;
+}
+
 /*NAV BAR*/
+
 .nav-bar{
   position: fixed;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   background-color: rgb(254, 250, 246);
   width: 100%;
@@ -40,9 +45,40 @@ a:visited, a:hover {
   z-index: 1;
 }
 
-.nav-bar a {
-  color: inherit;
-}
+.menu{
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-evenly;
+  background-color: #161616cb;
+  z-index: 1000;
+  color: white;
+ }
+ 
+ .menu li {
+  font-size: 25px;
+  border-bottom: 2px solid gray;
+ }
+
+ .active .menu {
+  display: flex;
+ }
+
+ #social-media-menu li {
+  border: none;
+ }
+
+ #social-media-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+ }
+
  /* FIRST SECTION */
 
 #hello{
@@ -255,21 +291,11 @@ a:visited, a:hover {
   width: 160px;
 }
 /*CONTACT*/
-.social-media{
-  display: flex;
+hr {
+  display: none;
 }
-
-footer {
-  display: flex;
-  padding: 15px;
-}
-
-.social-media {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 21px;
-  color: rgb(22, 22, 22);
+footer, footer .social-media {
+  display: none;
 }
 
 /*ADJUST*/
@@ -289,9 +315,37 @@ main{
 }
 
 @media screen and (min-width: 1024px) { 
+
+  .nav-bar button {
+    display: none;
+  }
+
+  .menu{   
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    height: 70px;
+    justify-content: space-evenly;
+    background-color: rgb(254, 250, 246) ;
+    color: rgb(22, 22, 22);
+    z-index: 1000;
+   }
+
+   .menu li {
+    border-bottom: none;
+   }
+
+  #social-media-menu {
+    display: none;
+  }
+
+  .nav-bar ul:nth-of-type(2) {
+    display: none;
+  }
   
-  .nav-bar{
-    font-size: 20px;
+  .nav-bar a {
+    color: inherit;
   }
 
   #hello {
@@ -308,4 +362,21 @@ main{
   #apresentation {
     width: 40%;
   }
+}
+
+.social-media{
+  display: flex;
+}
+
+footer {
+  display: flex;
+  padding: 15px;
+}
+
+.social-media {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 21px;
+  color: rgb(22, 22, 22);
 }

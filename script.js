@@ -5,6 +5,9 @@ const rightEar = document.querySelector('.ear-right')
 const navBar = document.querySelector('.nav-bar')
 const catFace = document.querySelector('.face')
 const pageFooter = document.querySelector('.social-media')
+const btnMobile = document.querySelector('.btn-mobile')
+
+
 
 document.body.style.backgroundColor = '#FEFAF6'
 function changeMode() {
@@ -27,3 +30,10 @@ function changeMode() {
 }
 
 cat.addEventListener('click', changeMode)
+
+const changeMenu = () => {
+  const navHamburguer = document.querySelector('.nav-bar');
+  navHamburguer.classList.toggle('active');
+}
+
+btnMobile.addEventListener('click', changeMenu);
