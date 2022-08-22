@@ -20,16 +20,34 @@
 <body>
   <header>
     <nav class="nav-bar">
-      <a href="index.html">portfólio</a>
-      <a href="about-me.html">sobre mim</a>
-      <a href="mailto:mirellaalvesdourado@gmail.com">contato</a>
+      <img src="assets/img/Mad-logo.png" alt="">
+      <button aria-label="Abrir Menu" class="btn-mobile" aria-haspopup="true" aria-controls=".menu" aria-expanded="false">
+        <span>Menu</span>
+        <span id="hamb"></span>
+      </button>
+      <ul class="menu" role="menu">
+        <li>portfólio</li>
+        <li><a href="about-me.html">sobre mim</a></li>
+        <li><a href="mailto:mirellaalvesdourado@gmail.com">contato</a></li>
+        <div id="social-media-menu">
+          <li aria-label="link para o github de Mirella">
+            <a href="http://github.com/MirellaDourado" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li aria-label="link para o linkedin de Mirella">
+          <a href="http://www.linkedin.com/in/mirelladourado/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li aria-label="link para o instagram de Mirella">
+            <a href="https://www.instagram.com/imirelladourado" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </div>
+      </ul>
     </nav>
   </header>
   <main class="text">
       <h1>
         Sou Mirella, estudante de Desenvolvimento Web Fullstack.
       </h1>
-      <img src="assets/img/Mirella-Dourado.jpeg" alt="Foto preta e branca de Mirella Dourado">
+      <!-- <img src="assets/img/Mirella-Dourado.jpeg" alt="Foto preta e branca de Mirella Dourado"> -->
       <div>
         <p>
           Sou natural de Salvador, Bahia. Comecei minha vida profissional estudando a área de Serviço Social, na </abbr>UFBA<abbr>, mas a curiosidade pela tecnologia resolveu aflorar e acabei mudando de área. Atualmente  estudo desenvolvimento web na <span>Trybe</span> e para me aprimorar ainda mais estudo alguns conteúdos extras por conta própria na <span>Digital Innovation One</span>. 
@@ -51,5 +69,6 @@
     </nav>
   </footer>
 
+  <script src="about-me.js"></script>
 </body>
 </html>

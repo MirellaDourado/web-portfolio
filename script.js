@@ -7,7 +7,6 @@ const catFace = document.querySelector('.face')
 const pageFooter = document.querySelector('.social-media')
 const btnMobile = document.querySelector('.btn-mobile')
 const hamburguer = document.querySelector('#hamb')
-const logo = navBar.querySelector('img')
 
 
 
