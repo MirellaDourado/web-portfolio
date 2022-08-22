@@ -45,27 +45,76 @@ li {
   z-index: 1;
 }
 
+.btn-mobile {
+  padding: 10px;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px red solid;
+  font-size: 1rem;
+  gap: 5px;
+}
+
+#hamb {
+  width: 20px;
+  height: 20px;
+  border-top: 2px black solid;
+  transition: .1s;
+}
+
+#hamb::after, #hamb::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  margin-top: 5px;
+  position: relative;
+  transition: .3s;
+}
+
+.active #hamb {
+  border-top: none;
+}
+
+.active #hamb::before {
+  transform: rotate(135deg);
+}
+
+.active #hamb::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
 .menu{
-  display: none;
-  position: absolute;
+  display: flex;
   width: 100%;
   top: 70px;
+  position: absolute;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 0;
   justify-content: space-evenly;
   background-color: #161616cb;
   z-index: 1000;
   color: white;
+  transition: .6s;
+  visibility: hidden;
+  font-size: 25px;
+  overflow-y: hidden;
  }
  
- .menu li {
-  font-size: 25px;
-  border-bottom: 2px solid gray;
- }
-
  .active .menu {
   display: flex;
+  height: 100vh ;
+  visibility: visible;
+  overflow-y: auto;
+ }
+
+ .menu li {
+  border-bottom: 2px solid gray;
  }
 
  #social-media-menu li {
@@ -330,6 +379,7 @@ main{
     background-color: rgb(254, 250, 246) ;
     color: rgb(22, 22, 22);
     z-index: 1000;
+    visibility: visible;
    }
 
    .menu li {
