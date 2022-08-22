@@ -23,14 +23,14 @@ function changeMode() {
     document.body.style.backgroundColor = '#161616'
     document.body.style.color = 'white'
     catText.innerHTML = 'Clique em mim para Light Mode'
-    cat.setAttribute('aria-label', 'Clique para mudar para o modo claro')
+    cat.setAttribute('aria-label', 'Botão com imagem de gato com a frase "Clique para mudar para o modo claro"')
     btnMobile.style.color = 'rgb(254, 250, 246)'
     hamburguer.style.borderColor = 'rgb(254, 250, 246)'
   } else if (document.body.style.backgroundColor === 'rgb(22, 22, 22)') {
     document.body.style.backgroundColor = '#FEFAF6'
     document.body.style.color = 'black'
     catText.innerHTML = 'Clique em mim para Dark Mode'
-    cat.setAttribute('aria-label', 'Clique para mudar para o modo escuro')
+    cat.setAttribute('aria-label', 'Botão com imagem de gato com a frase "Clique para mudar para o modo escuro"')
     btnMobile.style.color = 'rgb(22, 22, 22)'
     hamburguer.style.borderColor = 'rgb(22, 22, 22)'
   }
@@ -43,6 +43,12 @@ const changeMenu = () => {
   navHamburguer.classList.toggle('active');
   const active = navHamburguer.classList.contains('active')
   btnMobile.setAttribute('aria-expanded', active)
+
+  if (active) {
+    btnMobile.setAttribute('aria-label', 'Fechar Menu')
+  } else {
+    btnMobile.setAttribute('aria-label', 'Abrir Menu')
+  }
 }
   
 
