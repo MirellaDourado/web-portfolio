@@ -204,16 +204,18 @@ footer {
   .text h1{
     order: 1;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   .text img{
     order: 2;
     width: 40%;
-    height: 90%;
   }
   .text div{
     order: 3;
     width: 40%;
+    height: 70%;
   }
   .text {
     flex-direction: row;
@@ -224,7 +226,8 @@ footer {
   }
 
   hr {
-    margin-top: 200px;
+    display: block;
+    margin-top: 80px;
   }
 
   #social-media{
