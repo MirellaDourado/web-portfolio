@@ -36,13 +36,18 @@ li {
 .nav-bar{
   position: fixed;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: rgb(254, 250, 246);
   width: 100%;
   margin: 0;
   height: 70px;
   align-items: center;
   z-index: 1;
+}
+
+.nav-bar img {
+  width: 70px;
+  z-index: 10000;
 }
 
 .btn-mobile {
@@ -52,8 +57,8 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px red solid;
-  font-size: 1rem;
+  border: none;
+  font-size: 1.5rem;
   gap: 5px;
 }
 
