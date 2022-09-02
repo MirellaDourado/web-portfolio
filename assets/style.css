@@ -352,3 +352,5 @@ main::after {
   opacity: 0.9;
   pointer-events: none;
 }
+
+@media screen and (min-width: 769px){}
