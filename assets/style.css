@@ -353,4 +353,30 @@ main::after {
   pointer-events: none;
 }
 
-@media screen and (min-width: 769px){}
+@media screen and (min-width: 769px){
+
+  html {
+    cursor: default;
+  }
+  
+  h2 {
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+  }  
+  
+  h3 {
+    padding: 20px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+}
