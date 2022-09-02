@@ -58,7 +58,6 @@ h1 {
   font-weight: 200;
   font-family: 'Cormorant Garamond', serif;
 }
-/*NAV BAR*/
 
 header {
   display: flex;
@@ -175,8 +174,6 @@ header {
   flex-direction: row;
   align-self: center;
 }
-
- /* FIRST SECTION */
 
  main {
   width: 100vw;
@@ -318,4 +315,40 @@ header::after {
 
 #pixel-art {
   background-color: #4D3066;
+}
+
+footer {
+  min-height: 50.1vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.932);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer p {
+  font-size: 1.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 200;
+  font-style: italic;
+  position: absolute;
+  bottom: 2px;
+}
+
+footer h2 {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+}
+
+main::after {
+  content: '';
+  background-image: url(img/noise.gif);
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  opacity: 0.9;
+  pointer-events: none;
 }
