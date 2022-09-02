@@ -178,27 +178,75 @@ header {
 
  /* FIRST SECTION */
 
-#hello{
-  padding-top: 80px;
-  margin: auto;
-  max-width: 90%;
+ main {
+  width: 100vw;
+}
+
+#appresentation {
+  height: 70.1vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.932);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#apresentation h1{
-  font-family: 'Source Serif Pro', serif;
-  font-size: 45px;
-  font-weight: 400;
-  font-style: italic;
-  padding-bottom: 20px;
+header::after {
+  content: '';
+  background-image: url(img/noise.gif);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70vh;
+  position: absolute;
+  opacity: 0.9;
+  pointer-events: none;
 }
 
-#apresentation {
-  margin-bottom: 60px;
+#appresentation h1 span:nth-of-type(1) {
+  font-size: 2.1rem;
 }
+
+#appresentation h1 span:nth-of-type(2), h1 span:nth-of-type(3) {
+  font-weight: 900;
+}
+
+#appresentation a {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  transform: rotate(90deg);
+  border: 2px var(--contrast-primary-color) solid;
+  position: absolute;
+  bottom: 30px;
+  border-radius: 50%;
+}
+
+#appresentation a::before {
+  left: 30px;
+  top: 46%;
+  content: "";
+  width: 18px;
+  height: 2px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+}
+
+#appresentation a::after {
+  top: 46%;
+  transform: translate3d(0px, -34%, 90px);
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 0px;
+  width: 0px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 5px solid rgb(255, 255, 255);
+  right: -16px;
+}
+
 
 .extra {
   width: 100%;
