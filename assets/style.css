@@ -431,4 +431,29 @@ main::after {
     left: 50%;
   }
   
+  #appresentation {
+    height: 100vh;
+  }
+  
+  header::after {
+    height: 100vh;
+  }
+  
+  #appresentation h1 span:nth-of-type(1) {
+    font-size: 7.1rem;
+  }
+  
+  #appresentation h1 span:nth-of-type(2), h1 span:nth-of-type(3) {
+    font-weight: 900;
+  }
+  
+  #appresentation a {
+    width: 60px;
+    height: 60px;
+  }
+  
+  #appresentation a::before {
+    width: 40px;
+  }
+  
 }
