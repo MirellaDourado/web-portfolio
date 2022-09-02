@@ -455,7 +455,7 @@ main::after {
   #appresentation a::before {
     width: 40px;
   }
-  
+
   #about-my-work #about {
     margin: 20px 0px;
   }
@@ -519,4 +519,17 @@ main::after {
     line-height: 30px;
    }
   
+   footer {
+    min-height: 50.1vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.932);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  footer p {
+    font-size: 1.6rem;
+  }
 }
