@@ -379,4 +379,56 @@ main::after {
     font-size: 3.5rem;
   }
   
+  .nav-bar img {
+    width: 60px;
+  }
+  
+  .btn-mobile {
+    padding: 15px;
+  }
+  
+  .nav-bar img, .btn-mobile {
+    background-color: var(--contrast-primary-color);
+    box-shadow: 0rem 0 55px rgba(0, 0, 0, 0.486)
+  }
+  
+  #hamb {
+    width: 20px;
+    height: 20px;
+    border-top: 3px var(--primary-color) solid;
+    transition: .1s;
+  }
+  
+  #hamb::after, #hamb::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: currentColor;
+    margin-top: 5px;
+    position: relative;
+    transition: .3s;
+  }
+  
+  .active #hamb {
+    border-top: none;
+  }
+  
+  .active #hamb::before {
+    transform: rotate(135deg);
+  }
+  
+  .active #hamb::after {
+    transform: rotate(-135deg);
+    top: -7.2px;
+  }
+  
+  .menu{
+    width: 50%;
+   }
+   
+  .active .menu {
+    left: 50%;
+  }
+  
 }
