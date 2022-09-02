@@ -246,3 +246,76 @@ header::after {
   border-left: 5px solid rgb(255, 255, 255);
   right: -16px;
 }
+
+#about-my-work {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-my-work #about {
+  text-align: center;
+  padding: 40px 0px;
+}
+
+#about p {
+  padding: 0 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+}
+
+#about-my-work #my-work {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+#my-work a {
+  margin: 20px 0 20px;
+}
+
+#my-work a:nth-of-type(1){
+  margin: 0px 0 20px;
+}
+
+.vl {
+  border-left: 1px solid #666666;
+  height: 10vh;
+  margin-bottom: 2rem;
+}
+
+#kogue, #github, #pixel-art {
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#kogue {
+  background-color: #818EAE;
+}
+
+#github {
+  background-color: #161616;
+}
+
+#github i, #kogue i, #pixel-art i {
+  color: white;
+  font-size: 5rem;
+}
+
+#kogue p, #github p, #pixel-art p, footer p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  line-height: 30px;
+ }
+
+#pixel-art {
+  background-color: #4D3066;
+}
