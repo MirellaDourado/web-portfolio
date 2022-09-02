@@ -1,10 +1,3 @@
-const cat = document.querySelector('.extra');
-const catText = document.querySelector('.cat-p')
-const leftEar = document.querySelector('.ear-left')
-const rightEar = document.querySelector('.ear-right')
-const navBar = document.querySelector('.nav-bar')
-const catFace = document.querySelector('.face')
-const pageFooter = document.querySelector('.social-media')
 const btnMobile = document.querySelector('.btn-mobile')
 const hamburguer = document.querySelector('#hamb')
 
