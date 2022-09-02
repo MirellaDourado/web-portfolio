@@ -60,20 +60,26 @@ h1 {
 }
 /*NAV BAR*/
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
 .nav-bar{
   position: fixed;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(254, 250, 246);
   width: 100%;
   margin: 0;
   height: 70px;
   align-items: center;
   z-index: 1;
+  background-color: inherit;
 }
 
 .nav-bar img {
-  width: 70px;
+  margin-left: 20px;
+  width: 50px;
   z-index: 10000;
 }
 
@@ -87,12 +93,18 @@ h1 {
   border: none;
   font-size: 1.5rem;
   gap: 5px;
+  margin-right: 20px;
+}
+
+.nav-bar img, .btn-mobile {
+  background-color: var(--contrast-primary-color);
+  box-shadow: 0rem 0 55px rgba(0, 0, 0, 0.486)
 }
 
 #hamb {
   width: 20px;
   height: 20px;
-  border-top: 2px black solid;
+  border-top: 2px var(--primary-color) solid;
   transition: .1s;
 }
 
@@ -123,24 +135,27 @@ h1 {
 .menu{
   display: flex;
   width: 100%;
-  top: 70px;
+  top: 0px;
   position: absolute;
   flex-direction: column;
   align-items: center;
-  height: 0;
+  left: 100%;
+  min-height: 100vh;
   justify-content: space-evenly;
-  background-color: #161616cb;
-  z-index: 1000;
-  color: white;
+  z-index: 10000;
+  color: var(--contrast-primary-color);
+  background-color: rgb(0, 0, 0);
   transition: .6s;
   visibility: hidden;
   font-size: 25px;
   overflow-y: hidden;
+  z-index: -1;
+  padding: 0;
  }
  
  .active .menu {
   display: flex;
-  height: 100vh ;
+  left: 0;
   visibility: visible;
   overflow-y: auto;
  }
@@ -158,7 +173,8 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
- }
+  align-self: center;
+}
 
  /* FIRST SECTION */
 
