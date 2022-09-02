@@ -456,4 +456,67 @@ main::after {
     width: 40px;
   }
   
+  #about-my-work #about {
+    margin: 20px 0px;
+  }
+  
+  #about p {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  
+  #about-my-work #my-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vl {
+    border-left: 1px solid #666666;
+    height: 20vh;
+  }
+  
+  #my-work h2 {
+    width: 100vw;
+    text-align: center;
+  }
+
+  #my-work a {
+    margin: 20px 0 0;
+  }
+  
+  #my-work a:nth-of-type(1){
+    margin: 20px 0 0px;
+  }
+
+  #my-work a:nth-of-type(3){
+    margin: 20px 0 20px;
+  }
+  
+  #kogue, #pixel-art {
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  #github {
+    background-color: #161616;
+    width: 80vw;
+    height: 35vh;
+  }
+  
+  #kogue p, #github p, #pixel-art p, footer p {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    margin: 0 20px;
+    line-height: 30px;
+   }
+  
 }
