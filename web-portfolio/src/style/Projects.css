@@ -32,6 +32,7 @@
 
 .projectX:hover, .project:hover {
   scale: 1.02;
+  transition: .1s;
   cursor: pointer;
 }
 
