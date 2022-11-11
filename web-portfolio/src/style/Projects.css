@@ -15,12 +15,13 @@
   margin: auto;
   text-align: center;
   display: grid;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   background-color: #1F1A1C;
   color: white;
   margin: 15px 0;
   position: relative;
+  font-size: 3rem;
 }
 
 .projects .project:last-of-type {
@@ -29,11 +30,15 @@
   margin: 15px 0 0 0;
 }
 
+.projectX:hover, .project:hover {
+  scale: 1.02;
+  cursor: pointer;
+}
+
 .project h3, .projectX h3 {
   justify-self: center;
   align-self: center;
   text-align: center;
-  font-size: 3rem;
   font-weight: 400;
 }
 
@@ -55,6 +60,7 @@
   color: #FCD6FF;
   margin: 0 7.5px 0 0;
   position: relative;
+  font-size: 3rem;
 }
 
 .projects .projectX:nth-of-type(2) {
