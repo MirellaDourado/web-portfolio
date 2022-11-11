@@ -24,9 +24,15 @@ class NavBar extends Component {
             <span id="hamb"></span>
           </button>  
           <ul className='menu'>
-            <li> About me </li>
-            <li> Work </li>
-            <li> Contact </li>
+            <a href='#aboutMe'>
+              About me
+            </a>
+            <a href='#projects'>
+              Work
+            </a>
+            <a href='#projects'>
+              Contact
+            </a>
             <label className="toggle-wrapper" htmlFor="toggle">
             <div className={`toggle ${DarkMode ? "enabled" : "disabled"}`}>
               <span className="hidden">

@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -129,7 +130,7 @@
 /* hamb btn */
 
 .btn-mobile {
-  padding: 10px;
+  padding: 15px;
   background: var(--contrast-color);
   cursor: pointer;
   display: flex;
@@ -199,22 +200,22 @@
   overflow-y: auto;
 }
 
-.menu li {
+.menu a{
   align-self: center;
   text-align: end;
   justify-self: end;
   padding: 2rem;
-  margin: 60px 0 0;
+  margin-top: 70px;
   width: 100%;
   color: var(--page-background);
   text-align: center;
 }
 
-.menu li:last-of-type {
+.menu a:last-of-type {
   margin-bottom: 60px;
 }
 
-.menu li:hover{
+.menu a:hover{
   background-color: #7C238C;
   cursor: pointer;
 }
