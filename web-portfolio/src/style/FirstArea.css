@@ -15,12 +15,28 @@
   --page-background: #000000;
   --contrast-color: white;
   --shadow-box: rgba(255, 255, 255, 0.486);
+  --sun-moon: white;
+  --box-shadow: 0 0 2em white;
+  --ilumination: brightness(30%);
+  --floor: #120B1A;
 }
 
 .light-theme {
   --page-background: white;
   --contrast-color: black;
   --shadow-box: rgba(0, 0, 0, 0.486);
+  --sun-moon: orange;
+  --box-shadow: 0 0 10px orange,
+    0 0 60px orange,
+    0 0 200px yellow,
+    inset 0 0 80px yellow;
+  --ilumination: brightness(80%);
+  --floor: #1c0522;
+}
+
+.light-theme {
+  background-color: var(--page-background);
+  color: var( --contrast-color);
 }
 
 .dark-theme {
@@ -129,7 +145,7 @@
 
 /* hamb btn */
 
-.btn-mobile {
+/* .btn-mobile {
   padding: 15px;
   background: var(--contrast-color);
   cursor: pointer;
@@ -186,7 +202,7 @@
   z-index: 10;
   background-color: var(--contrast-color);
   width: 0;
-  transition: .6s;
+  transition: .2s;
   flex-direction: column;
   height: calc(100vh + 10px);
   visibility: hidden;
@@ -218,7 +234,7 @@
 .menu a:hover{
   background-color: #7C238C;
   cursor: pointer;
-}
+} */
 
 #triangle {
   position: relative;

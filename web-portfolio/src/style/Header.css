@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+#web-portfolio header {
+  /* border: 2px red solid; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+#web-portfolio nav {
+  /* border: 2px green solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  gap: 20px;
+  font-size: 16px;
+  font-family: 'Cutive Mono', monospace;
+}
+
+#web-portfolio nav a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+#web-portfolio #lets-talk {
+  border: 2px red solid;
+  border-radius: 10px;
+  width: 130px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-menu p {
+  /* background-color: #04AA6D; */
+  /* color: black; */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.work-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.work-list{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.work-list li {
+  font-size: 18px;
+}
+
+.work-list li:hover {
+  background-color: #3e8e41
+}
+
+.work-menu:hover .work-list {
+  display: block;
+}
+
+#web-portfolio header img {
+  width: 50px;
+  margin-left: 40px;
+}

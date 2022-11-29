@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { BsFillBrightnessHighFill, BsFillMoonFill } from 'react-icons/bs';
+import '../style/Header.css';
+import LogoLightMode from '../img/LogoLightMode.png'
+import LogoDarkMode from '../img/LogoDarkMode.png'
 
 class NavBar extends Component {
 
@@ -13,30 +16,33 @@ class NavBar extends Component {
     const { changeMode, DarkMode } = this.props
     return (
       <header>
-        <nav id='nav-bar'>
-          <button
-            aria-label="Open Menu"
-            className="btn-mobile"
-            aria-haspopup="true"
-            aria-controls="menu"
-            aria-expanded="false"
-            onClick={ this.handleMenu }>
-            <span id="hamb"></span>
-          </button>  
-          <ul className='menu'>
+        <img
+          src={ DarkMode ? LogoLightMode : LogoDarkMode }
+        />
+        <nav id='nav-bar'> 
             <a href='#aboutMe'>
-              About me
+              About
             </a>
-            <a href='#projects'>
-              Work
-            </a>
-            <a href='#projects'>
-              Contact
+            <div className='work-menu'>
+              <p>Work</p>
+            <div className='work-list'>
+              <li> Pixels Art </li>
+              <li> Color Guess </li>
+              <li> TrybeTunes </li>
+              <li> TryUnfo </li>
+              <li> Trybe Wallet </li>
+              <li> Shopping Cart </li>
+              <li> Solar System </li>
+              <li> Trivia </li>
+            </div>
+            </div>
+            <a id="lets-talk">
+              Let's Talk
             </a>
             <label className="toggle-wrapper" htmlFor="toggle">
-            <div className={`toggle ${DarkMode ? "enabled" : "disabled"}`}>
+            <div className={`toggle ${ DarkMode ? "enabled" : "disabled" }`}>
               <span className="hidden">
-                {DarkMode ? "Enable" : "Disable"}
+                { DarkMode ? "Enable" : "Disable" }
               </span>
               <div className="icons">
                 <BsFillBrightnessHighFill className='mode-icon' />
@@ -51,7 +57,6 @@ class NavBar extends Component {
               />
             </div>
           </label>
-          </ul>
         </nav>
       </header>
   )
