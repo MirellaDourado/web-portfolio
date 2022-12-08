@@ -2,18 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 #web-portfolio header {
-  /* border: 2px red solid; */
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
 }
 
 #web-portfolio nav {
-  /* border: 2px green solid; */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 40%;
   gap: 20px;
   font-size: 16px;
   font-family: 'Cutive Mono', monospace;
@@ -26,18 +24,29 @@
 }
 
 #web-portfolio #lets-talk {
-  border: 2px red solid;
+  padding: 2px;
+  background: linear-gradient(to right, #d367c1 10%,#dedf40 25%,#62cb5c 50%,#00bbcb 75%,#ab79d6 90%);
+  position: relative;
+  border-radius: 10px;
+  transition: transform 2s;
+}
+
+#web-portfolio #lets-talk:hover {
+  padding: 4px;
+}
+
+#web-portfolio #lets-talk a {
   border-radius: 10px;
   width: 130px;
   height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--page-background);
+  /* background-color: transparent; */
 }
 
 .work-menu p {
-  /* background-color: #04AA6D; */
-  /* color: black; */
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -73,4 +82,16 @@
 #web-portfolio header img {
   width: 50px;
   margin-left: 40px;
+}
+
+#toggle {
+  width: 135px;
+  background-color: var(--background-color);
+  color: var(--contrast-color);
+  border: none;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 15px;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
 }

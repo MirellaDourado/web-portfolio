@@ -1,25 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../style/FirstArea.css';
-import deerDarkMode from '../img/deerDarkMode.png';
-import deerLightMode from '../img/deerLightMode.png';
+import pcGif from '../img/pcGif.gif'
 // import { BsLayerBackward } from 'react-icons/bs';
 
-class FirstArea extends Component {
-
-  render() {
-    const { DarkMode } = this.props;
-    return (
-      <section className="firstArea">        
-          {/* <button type='button' onClick={  } className="mode-btn">{ DarkMode ? <BsFillMoonFill size="20px"/> : <BsFillBrightnessHighFill/> }</button> */}
-          {/* <div className='appresentation'>
-            <div id='stars3' />
-            <div id='stars' />
-            <div id='stars2' />
-            { DarkMode ? <img src={ deerDarkMode } alt="Deer" className='deer' /> : <img src={ deerLightMode } alt="Deer" className='deer' />}
-          </div> */}
-      </section>
-    );
-  }
+function FirstArea() {
+  return (
+    <main className="firstArea">        
+      <img src={ pcGif } width='830px'></img>
+    </main>
+  );
 }
 
 export default FirstArea;
