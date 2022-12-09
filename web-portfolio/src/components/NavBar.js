@@ -3,6 +3,8 @@ import '../style/Header.css';
 import LogoLightMode from '../img/LogoLightMode.png'
 import LogoDarkMode from '../img/LogoDarkMode.png'
 import PortfolioContext from '../context/PortfolioContext';
+import { Link } from 'react-router-dom';
+import About from '../pages/About';
 
 function NavBar() {
   const {setDarkMode, darkMode} = useContext(PortfolioContext);
@@ -22,9 +24,11 @@ function NavBar() {
 
   return (
     <header>
-      <img
-        src={ darkMode ? LogoLightMode : LogoDarkMode } alt="Logo"
-      />
+      <Link to='/'>
+        <img
+          src={ darkMode ? LogoLightMode : LogoDarkMode } alt="Logo"
+        />
+      </Link>
       <nav id='nav-bar'> 
       <label className="toggle-wrapper" htmlFor="toggle">
             <button
@@ -36,9 +40,9 @@ function NavBar() {
               Dark Mode: { darkMode ? 'on' : 'off' }
             </button>
         </label>
-          <a href='#aboutMe'>
+          <Link to='/about'>
             About
-          </a>
+          </Link>
           <div className='work-menu'>
             <p>Work</p>
           <div className='work-list'>

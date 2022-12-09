@@ -65,6 +65,7 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  list-style-type: none;
 }
 
 .work-list li {
@@ -72,7 +73,8 @@
 }
 
 .work-list li:hover {
-  background-color: #3e8e41
+  background: linear-gradient(to right, #d367c1 10%,#dedf40 25%,#62cb5c 50%,#00bbcb 75%,#ab79d6 90%);
+  cursor: pointer;
 }
 
 .work-menu:hover .work-list {

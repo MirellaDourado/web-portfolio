@@ -16,7 +16,7 @@
 }
 
 .dark-theme {
-  --page-background: #000000;
+  --page-background: black;
   --contrast-color: white;
   --par-background: #27272C;
   --shadow-box: rgba(255, 255, 255, 0.486);

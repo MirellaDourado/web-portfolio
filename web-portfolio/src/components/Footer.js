@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../style/Footer.css'
 
 function Footer() {
     return (
       <footer id="footer">
-        <a href='https://www.linkedin.com/in/mirelladourado/'> Linkedin </a>
+        <Link to='https://www.linkedin.com/in/mirelladourado/' target="_blank"> Linkedin </Link>
         <p> Mirella Dourado </p>
-        <a href='https://github.com/MirellaDourado'> GitHub </a>
+        <Link to='https://github.com/MirellaDourado' target="_blank"> GitHub </Link>
       </footer>
     )
 
