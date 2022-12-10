@@ -43,7 +43,6 @@
   align-items: center;
   justify-content: center;
   background-color: var(--page-background);
-  /* background-color: transparent; */
 }
 
 .work-menu p {
@@ -95,5 +94,9 @@
   font-size: 15px;
   position: relative;
   margin: auto;
+  cursor: pointer;
+}
+
+.work-menu {
   cursor: pointer;
 }

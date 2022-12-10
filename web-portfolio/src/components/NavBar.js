@@ -4,7 +4,6 @@ import LogoLightMode from '../img/LogoLightMode.png'
 import LogoDarkMode from '../img/LogoDarkMode.png'
 import PortfolioContext from '../context/PortfolioContext';
 import { Link } from 'react-router-dom';
-import About from '../pages/About';
 
 function NavBar() {
   const {setDarkMode, darkMode} = useContext(PortfolioContext);
@@ -48,7 +47,11 @@ function NavBar() {
           <div className='work-list'>
             <li> Pixels Art </li>
             <li> Color Guess </li>
-            <li> TrybeTunes </li>
+            <li>
+              <Link to={{pathname: "https://trybetunes--nine.vercel.app/"}} target="_blank" rel="noopener noreferrer">
+                TrybeTunes
+              </Link>
+            </li>
             <li> TryUnfo </li>
             <li> Trybe Wallet </li>
             <li> Shopping Cart </li>

@@ -25,7 +25,7 @@ function About() {
             Since then, I did projects with some tools and technologies, like: HTML, CSS, JavaScipt, React, Redux and Java.
           </p>
           <p>
-            Not only focusing on hard skills, I also learned about soft skills to increase my work area, such as: 
+            Not only focusing on hard skills, I also learned about soft skills to increase my work area, such as: self-leadership, assertiveness, active listening, empathy, resilience, collaboration and assertive communication
           </p>
         </div>
         <img src={ darkMode ? deerDarkMode : deerLightMode } alt="Mirella Dourado" />

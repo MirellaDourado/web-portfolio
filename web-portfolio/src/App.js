@@ -26,13 +26,6 @@ function App() {
           exact
           path="/about"
         />
-        {/* <Route exact path="/trybetunes" component={ LoginTrybeTunes } />
-        <Route exact path="/trybetunes/search" component={ SearchTrybeTunes } />
-        <Route exact path="/trybetunes/album/:id" component={ AlbumTrybeTunes } />
-        <Route exact path="/trybetunes/favorites" component={ Favorites } />
-        <Route exact path="/trybetunes/profile/" component={ Profile } />
-        <Route exact path="/trybetunes/profile/edit" component={ ProfileEdit } />
-        <Route path="*" component={ NotFound } /> */}
       </Switch> 
     </PortfolioProvider>
   );
