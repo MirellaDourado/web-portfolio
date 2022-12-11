@@ -48,11 +48,15 @@ function NavBar() {
             <li> Pixels Art </li>
             <li> Color Guess </li>
             <li>
-              <Link to={{pathname: "https://trybetunes--nine.vercel.app/"}} target="_blank" rel="noopener noreferrer">
+              <Link to={{pathname: "https://trybetunes--nine.vercel.app/"}} target="_blank" >
                 TrybeTunes
               </Link>
             </li>
-            <li> TryUnfo </li>
+            <li> 
+              <Link to={ {pathname: "https://bombertrunfo.vercel.app"} } target="_blank" >
+                TryUnfo
+              </Link>
+            </li>
             <li> Trybe Wallet </li>
             <li> Shopping Cart </li>
             <li> Solar System </li>

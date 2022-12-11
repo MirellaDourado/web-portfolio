@@ -1,7 +1,6 @@
 import React from 'react';
 import '../style/FirstArea.css';
 import pcGif from '../img/pcGif.gif'
-// import { BsLayerBackward } from 'react-icons/bs';
 
 function FirstArea() {
   return (
