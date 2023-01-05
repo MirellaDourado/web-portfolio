@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,18 +18,131 @@
   color: var( --contrast-color);
 }
 
-.firstArea {
+#triangle {
+  top: 20px;
+}
+
+.hero {
+  /* border: 2px red solid; */
+  position: relative;
+}
+
+.project {
+  height: 110vh;
   display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.project h2 span:nth-of-type(1) {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.project h2 span:nth-of-type(2) {
+  font-size: 12em;
+  font-weight: 500;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.firstArea img {
-  height: 520px;
-  margin: auto;
+.project-description .descrip h2 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  /* border: 2px purple solid; */
 }
 
-#triangle {
-  top: 20px;
+.project-description p {
+  margin: 15px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2em;
+  /* width: 50%; */
+  display: flex;
+  /* border: 2px red solid; */
+}
+
+.project-description p span {
+  margin: 20px;
+  width: 300px;
+  opacity: 0.8;
+  text-align: justify;
+}
+
+.project-description div button{
+  border: none;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.project-description .tools-list {
+  display: flex;
+  font-family: 'Dosis', sans-serif;
+  margin-top: 20px;
+}
+
+.project-description .tools-list ul li {
+  font-size: 0.8rem;
+  list-style-type: none;
+  margin-left: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.project-description .tools-list h3 {
+  font-size: 1.3rem;
+  list-style-type: none;
+  margin-left: 30px;
+  line-height: 30px;
+}
+
+.descrip {
+  height: 300px;
+}
+
+.buttons-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  width: 80%;
+  /* border: 2px slateblue solid; */
+  justify-content: space-evenly;
+  height: 50px;
+  
+}
+
+.colored-border a {
+  border-radius: 10px;
+  width: 450px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--page-background);
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+}
+
+.colored-border {
+  padding: 3px;
+  background: linear-gradient(to right, #d367c1 10%,#dedf40 25%,#62cb5c 50%,#00bbcb 75%,#ab79d6 90%);
+  position: relative;
+  border-radius: 10px;
+  transition: transform 2s;
+}
+
+.colored-border:hover{
+  padding: 5px;
 }

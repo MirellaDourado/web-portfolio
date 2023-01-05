@@ -18,7 +18,7 @@
 .dark-theme {
   --page-background: black;
   --contrast-color: white;
-  --par-background: #27272C;
+  --par-background: #27272cb6;
   --shadow-box: rgba(255, 255, 255, 0.486);
   --hover-color: #AB79D6;
   --box-shadow: 0 0 2em white;
@@ -29,7 +29,7 @@
 .light-theme {
   --page-background: white;
   --contrast-color: black;
-  --par-background: #dddcdc;
+  --par-background: #dddcdc83;
   --shadow-box: rgba(0, 0, 0, 0.486);
   --hover-color: #D367C1;
   --box-shadow: 0 0 10px orange,
