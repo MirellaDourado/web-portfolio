@@ -4,6 +4,7 @@ import errorVideo from '../assets/videos/Falha36784.mp4'
 import previewTrybetunes from '../img/projects/preview-trybetunes.png';
 import previewTrunfo from '../img/projects/preview-trunfo.png';
 import shopping from '../img/projects/preview-shopping.png';
+import previewTrivia from '../img/projects/preview-trivia.png'
 import SplitText from './SplitText';
 import Projects from './Projects';
 import ProjectDescription from './ProjectDescription';
@@ -45,15 +46,25 @@ function FirstArea() {
         gitUrl="https://github.com/MirellaDourado/Project-TryUnfo"
         projectUrl="https://bombertrunfo.vercel.app/"
       />
-      <Projects project="Shopping Cart" projectNumber="03"/>
+      <Projects project="Online Store" projectNumber="03"/>
       <ProjectDescription
-        project="Shopping Cart"
+        project="Store"
         description1="This project simulates a online store online, with Mercado Livre API. In it, it is possible to shearch a product by it's name, by category, simulates and buy cart addying itens to it and removing."
         description2="Since this project was made in group, the main focus of this project is in agile methodologies and application of knowledge about React.js"
         tools={['React', 'JavaScript', 'CSS', 'HTML' ]}
         img={ shopping }
-        gitUrl={"https://github.com/tryber/sd-025-b-project-shopping-cart"}
-        projectUrl={null}
+        gitUrl={"https://github.com/MirellaDourado/Project-FrontEnd-Online-Store"}
+        projectUrl={ "https://onlinestorecart.vercel.app" }
+      />
+      <Projects project="Trivia Game" projectNumber="04"/>
+      <ProjectDescription
+        project="Trivia"
+        description1="This project simulates the trivia game, with the Gravatar API and API. In it, it is possible to play a simple game and get ranked! If the player have a registration in the Gravatar, his photo will be showed."
+        description2="Since this project was made in group, the main focus of this project is in using kanban methodology and application of knowledge about React Redux"
+        tools={['React', 'JavaScript', 'CSS', 'HTML', 'Redux', 'BrowserRouter' ]}
+        img={ previewTrivia }
+        gitUrl={"https://github.com/MirellaDourado/Project-Trivia"}
+        projectUrl={ "https://curious-trivia.vercel.app/" }
       />
     </main>
   );

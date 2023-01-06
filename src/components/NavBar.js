@@ -57,8 +57,16 @@ function NavBar() {
                 Trump Game
               </a>
             </li>
-            <li> Trybe Wallet </li>
-            <li> Shopping Cart </li>
+            <li>
+              <a href="#Store">
+                Trybe Wallet
+              </a>
+            </li>
+            <li> 
+              <a href="#Store">
+                Online Store
+              </a>
+            </li>
             <li> Solar System </li>
             <li> Trivia </li>
           </div>
