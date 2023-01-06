@@ -115,7 +115,6 @@
   justify-content: center;
   margin-top: 5px;
   width: 80%;
-  /* border: 2px slateblue solid; */
   justify-content: space-evenly;
   height: 50px;
   
@@ -145,4 +144,12 @@
 
 .colored-border:hover{
   padding: 5px;
+}
+
+.project-description img {
+  width: 80%;
+}
+
+.project-description:nth-last-of-type(1) img {
+  width: 25%;
 }

@@ -14,7 +14,7 @@ function ProjectDescription({ project, description1, description2, tools, img, g
           <span> { description2 } </span>
         </p>
       </div>
-      <img  src={ img } alt={ project } style={ { width: "80%" } } />
+      <img  src={ img } alt={ project } />
       <div className="buttons-div">
         <div className="colored-border">
           <Link to={ { pathname: projectUrl } } target="_blank">

@@ -45,8 +45,6 @@ function NavBar() {
           <div className='work-menu'>
             <p>Work</p>
           <div className='work-list'>
-            <li> Pixels Art </li>
-            <li> Color Guess </li>
             <li>
               <a href="#TrybeTunes" >
                 TrybeTunes
@@ -57,18 +55,17 @@ function NavBar() {
                 Trump Game
               </a>
             </li>
-            <li>
-              <a href="#Store">
-                Trybe Wallet
-              </a>
-            </li>
             <li> 
               <a href="#Store">
                 Online Store
               </a>
             </li>
-            <li> Solar System </li>
+            <a href="#Trivia">
             <li> Trivia </li>
+            </a>
+            <a href="#Recipe">
+            <li> Recipe App </li>
+            </a>
           </div>
           </div>
           <div id="lets-talk">

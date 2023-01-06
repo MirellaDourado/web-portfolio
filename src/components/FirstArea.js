@@ -5,6 +5,7 @@ import previewTrybetunes from '../img/projects/preview-trybetunes.png';
 import previewTrunfo from '../img/projects/preview-trunfo.png';
 import shopping from '../img/projects/preview-shopping.png';
 import previewTrivia from '../img/projects/preview-trivia.png'
+import previewRecipe from '../img/projects/preview-recipe.png'
 import SplitText from './SplitText';
 import Projects from './Projects';
 import ProjectDescription from './ProjectDescription';
@@ -59,12 +60,22 @@ function FirstArea() {
       <Projects project="Trivia Game" projectNumber="04"/>
       <ProjectDescription
         project="Trivia"
-        description1="This project simulates the trivia game, with the Gravatar API and API. In it, it is possible to play a simple game and get ranked! If the player have a registration in the Gravatar, his photo will be showed."
+        description1="This project simulates the trivia game, with the Gravatar API and Quest API. In it, it is possible to play a simple game and get ranked! If the player have a registration in the Gravatar, his photo will be showed."
         description2="Since this project was made in group, the main focus of this project is in using kanban methodology and application of knowledge about React Redux"
         tools={['React', 'JavaScript', 'CSS', 'HTML', 'Redux', 'BrowserRouter' ]}
         img={ previewTrivia }
         gitUrl={"https://github.com/MirellaDourado/Project-Trivia"}
         projectUrl={ "https://curious-trivia.vercel.app/" }
+      />
+      <Projects project="Recipe App" projectNumber="05"/>
+      <ProjectDescription
+        project="Recipe"
+        description1="This project simulates a recipe app, with 2 APIs. In it, it is possible search a recipe (Meal recipe or Drink recipe), see the description, start the recipe, finish it, share the recipe link and see your done recipes."
+        description2="This project is made to be seen in 360x640. Since this project was made in group, the main focus of this project is in using kanban methodology and application of knowledge about React Redux."
+        tools={['React', 'JavaScript', 'CSS', 'HTML', 'React-Hooks', 'Context API', 'BrowserRouter', 'API' ]}
+        img={ previewRecipe }
+        gitUrl={"https://github.com/MirellaDourado/Project-Recipe-App"}
+        projectUrl={ "https://projectrecipe.vercel.app/" }
       />
     </main>
   );
