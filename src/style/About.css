@@ -1,45 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
-.main-about {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  /* flex-direction: column; */
-  /* border: 2px green solid; */
-  width: 80%;
-  margin: auto;
+
+@media screen and (max-width: 915px) {
+  .main-about {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* border: 2px green solid; */
+    width: 80%;
+    margin: auto;
+  }
+
+  .main-about img {
+    width: 300px;
+  }
+
+  /* .main-about div h2 { */
+    /* color: transparent; */
+    /* justify-self: center; */
+    /* font-size: 60px;
+    margin-bottom: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900; */
+  /* } */
+
+  .main-about div h2 span{
+    font-size: 60px;
+    margin-bottom: 60px;
+    color: var(--page-background);
+    text-shadow: 2px 2px 4px var(--contrast-color);
+  }
+
+  .main-about div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-about div p {
+    width: 90%;
+    line-height: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 20px;
+  }
 }
 
-.main-about img {
-  width: 300px;
-  /* margin-right: 60px; */
-}
+@media screen and (max-width: 915px) {
 
-/* .main-about div h2 { */
-  /* color: transparent; */
-  /* justify-self: center; */
-  /* font-size: 60px;
-  margin-bottom: 60px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 900; */
-/* } */
+  .main-about img {
+    display: none;
+  }
 
-.main-about div h2 span{
-  font-size: 60px;
-  margin-bottom: 60px;
-  color: var(--page-background);
-  text-shadow: 2px 2px 4px var(--contrast-color);
-}
+  .main-about {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    min-height: calc(100vh - 89px);
+  }
 
-.main-about div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  .main-about div h2{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: var(--contrast-color);
+    font-family: 'Chakra Petch', sans-serif;
+  }
 
-.main-about div p {
-  width: 90%;
-  line-height: 20px;
-  font-family: 'Nunito', sans-serif;
-  margin-bottom: 20px;
+  .main-about div h2 span{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: var(--contrast-color);
+    font-family: 'Chakra Petch', sans-serif;
+  }
+  
+  .main-about div {
+    margin-top: 100px;
+  }
+  
+  .main-about div p {
+    text-align: justify;
+    width: 100%;
+    line-height: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 20px;
+  }
+
 }
