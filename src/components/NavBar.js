@@ -56,10 +56,8 @@ function NavBar() {
             </Link>
             </button>
           </li>
-          <li>
-          <button className='work-menu'>
+          <li className='work-menu'>
             Work
-          </button>
             <div className='work-list'>
               <li>
                 <a href="#TrybeTunes" >
@@ -85,9 +83,9 @@ function NavBar() {
             </div>
           </li>
           <li id="lets-talk">
-            <button href='mailto:mirellaalvesdourado@gmail.com'>
+            <a href='mailto:mirellaalvesdourado@gmail.com'>
               Let's Talk
-            </button>
+            </a>
           </li>
         </ul>
       </nav>

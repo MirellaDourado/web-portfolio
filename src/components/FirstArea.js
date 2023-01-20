@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../style/FirstArea.css';
-import errorVideo from '../assets/videos/Falha36784.mp4'
+import videoHero from '../assets/videos/videoHero.mp4'
 import previewTrybetunes from '../img/projects/preview-trybetunes.png';
 import previewTrunfo from '../img/projects/preview-trunfo.png';
 import shopping from '../img/projects/preview-shopping.png';
@@ -23,7 +23,7 @@ function FirstArea() {
       {console.log(window.page)}
       <div className='hero'>
         <video className='videoHero' autoPlay muted loop>
-            <source src={ errorVideo } type="video/mp4"/>
+            <source src={ videoHero } type="video/mp4"/>
         </video>
         <h1> <SplitText copy="FULL STACK DEVELOPER BORN IN 01'S BASED IN BRAZIL " role="heading" /> </h1>
       </div>

@@ -51,7 +51,7 @@
   #menu button {
     height: 30px;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     width: 100vw;
     height: 60px;
@@ -61,7 +61,15 @@
     background-color: transparent;
     color: var(--contrast-color);
     font-family: 'Dosis', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+  }
+
+  #menu #lets-talk {
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
   }
 
   a {
@@ -95,9 +103,12 @@
     position: fixed;
     width: 100%;
     z-index: 10000000;
+    /* border: 2px red solid; */
+    background-color: var(--page-background);
   }
 
   #web-portfolio nav {
+    /* border: 2px green solid; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,6 +119,19 @@
     -webkit-text-stroke: 0.2px var(--page-background);
   }
 
+  #web-portfolio nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #web-portfolio nav ul li button {
+    border: none;
+    background-color: transparent;
+    color: var(--background-color);
+  }
+
   #web-portfolio nav a {
     cursor: pointer;
     color: inherit;
@@ -115,12 +139,16 @@
     -webkit-text-stroke: 0.2px var(--page-background);
   }
 
-  #web-portfolio #lets-talk {
+  #lets-talk {
     padding: 2px;
     background: linear-gradient(to right, #d367c1 10%,#dedf40 25%,#62cb5c 50%,#00bbcb 75%,#ab79d6 90%);
     position: relative;
     border-radius: 10px;
     transition: transform 2s;
+  }
+
+  #lets-talk button {
+    background-color: var(--background-color);
   }
 
   #web-portfolio #lets-talk:hover {
