@@ -29,3 +29,20 @@ footer a:hover {
   color: var(--hover-color);
   cursor: pointer;
 }
+
+@media screen and (max-width: 915px) {
+  footer p, footer a {
+    font-size: 14px;
+    color: var(--contrast-color);
+    font-weight: 300;
+    text-decoration: none;
+    font-family: 'Bitter', serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 20px 10px;
+  }
+
+  .project h2  {
+    font-size: 20px ;
+  }
+}

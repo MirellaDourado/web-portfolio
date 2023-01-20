@@ -55,16 +55,13 @@
   font-family: 'Chakra Petch', sans-serif;
   font-size: 3em;
   text-align: center;
-  /* border: 2px purple solid; */
 }
 
 .project-description p {
   margin: 15px;
   font-family: 'Dosis', sans-serif;
   font-size: 1.2em;
-  /* width: 50%; */
   display: flex;
-  /* border: 2px red solid; */
 }
 
 .project-description p span {
@@ -152,4 +149,24 @@
 
 .project-description:nth-last-of-type(1) img {
   width: 25%;
+}
+
+@media screen and (max-width: 915px) {
+  .colored-border a {
+    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--page-background);
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .hero {
+    display: none;
+  }
 }

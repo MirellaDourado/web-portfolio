@@ -1,12 +1,14 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import '../style/Header.css';
 import LogoLightMode from '../img/LogoLightMode.png'
 import LogoDarkMode from '../img/LogoDarkMode.png'
 import PortfolioContext from '../context/PortfolioContext';
 import { Link } from 'react-router-dom';
+import { AiOutlineMenu } from "react-icons/ai";
 
 function NavBar() {
   const {setDarkMode, darkMode} = useContext(PortfolioContext);
+  const [btnVisible, setBtn] = useState(false);
 
   const changeMode = () => {
     setDarkMode(!darkMode)
@@ -21,6 +23,10 @@ function NavBar() {
     }
   }, [])
 
+  const MobileBtn = () => {
+    setBtn(!btnVisible)
+  }
+
   return (
     <header>
       <Link to='/'>
@@ -28,8 +34,12 @@ function NavBar() {
           src={ darkMode ? LogoLightMode : LogoDarkMode } alt="Logo"
         />
       </Link>
-      <nav id='nav-bar'> 
-      <label className="toggle-wrapper" htmlFor="toggle">
+      <nav id='nav-bar' className={btnVisible ? 'active' : ''}> 
+        <button id='mobile-btn' onClick={ MobileBtn }>
+          <AiOutlineMenu fontSize='30px'/>
+        </button>
+        <ul id='menu'>
+          <li>
             <button
               id="toggle"
               name="toggle"
@@ -38,41 +48,48 @@ function NavBar() {
             >
               Dark Mode: { darkMode ? 'on' : 'off' }
             </button>
-        </label>
-          <Link to='/about'>
-            About
-          </Link>
-          <div className='work-menu'>
-            <p>Work</p>
-          <div className='work-list'>
-            <li>
-              <a href="#TrybeTunes" >
-                TrybeTunes
+          </li>
+          <li>
+            <button>
+            <Link to='/about'>
+              About
+            </Link>
+            </button>
+          </li>
+          <li>
+          <button className='work-menu'>
+            Work
+          </button>
+            <div className='work-list'>
+              <li>
+                <a href="#TrybeTunes" >
+                  TrybeTunes
+                </a>
+              </li>
+              <li> 
+                <a href="#Trump" >
+                  Trump Game
+                </a>
+              </li>
+              <li> 
+                <a href="#Store">
+                  Online Store
+                </a>
+              </li>
+              <a href="#Trivia">
+              <li> Trivia </li>
               </a>
-            </li>
-            <li> 
-              <a href="#Trump" >
-                Trump Game
+              <a href="#Recipe">
+              <li> Recipe App </li>
               </a>
-            </li>
-            <li> 
-              <a href="#Store">
-                Online Store
-              </a>
-            </li>
-            <a href="#Trivia">
-            <li> Trivia </li>
-            </a>
-            <a href="#Recipe">
-            <li> Recipe App </li>
-            </a>
-          </div>
-          </div>
-          <div id="lets-talk">
-            <a href='mailto:mirellaalvesdourado@gmail.com'>
+            </div>
+          </li>
+          <li id="lets-talk">
+            <button href='mailto:mirellaalvesdourado@gmail.com'>
               Let's Talk
-            </a>
-          </div>
+            </button>
+          </li>
+        </ul>
       </nav>
     </header>
   )
